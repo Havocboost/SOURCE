@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Class">
+      <UniqueIdentifier>{abea4f81-ca21-4ee1-a1d3-0b08af866bc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Functions">
+      <UniqueIdentifier>{7a8fb37e-367c-4705-9e72-fef8e01ad490}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Class\Command Mods">
+      <UniqueIdentifier>{f174b299-12d9-4d19-a642-d95f467bfd4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Class\Hooks">
+      <UniqueIdentifier>{6295c489-dd90-40c5-89fd-9984b1d7b9aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Class\Visual">
+      <UniqueIdentifier>{389e68b0-d2db-40bd-91e4-9cb7fbe8a3d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Class\Implementation">
+      <UniqueIdentifier>{40c622f5-b2c1-4511-af1a-9612c39a5216}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Functions\Command Mods">
+      <UniqueIdentifier>{1abaf921-f566-4c1b-9f52-4e986050bfc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Functions\Visual">
+      <UniqueIdentifier>{23cefd7f-b592-470b-bb4d-1e8f853f7d09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Command Mods">
+      <UniqueIdentifier>{9a30ba60-91a6-42ce-830a-59675fe88d50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Hooks">
+      <UniqueIdentifier>{ae4cded6-f5d8-41a4-9f85-4ee0e0bc5691}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Module">
+      <UniqueIdentifier>{9c9d9862-7060-4f92-add1-03c2aefaa8d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Class\Module">
+      <UniqueIdentifier>{ab714dfc-dd67-4e57-af95-57f4bb238b2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Implementation">
+      <UniqueIdentifier>{6397f35b-b937-410d-a1b1-224ac54d99aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Visuals">
+      <UniqueIdentifier>{cbed8e60-8be9-46a2-92ad-6e7eaf0bf4ea}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F_Proxies.cpp">
+      <Filter>Source Files\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="F_SetViewAngles.cpp">
+      <Filter>Source Files\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Aimbot.cpp">
+      <Filter>Source Files\Class\Command Mods</Filter>
+    </ClCompile>
+    <ClCompile Include="C_AntiAim.cpp">
+      <Filter>Source Files\Class\Command Mods</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Prediction.cpp">
+      <Filter>Source Files\Class\Command Mods</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Interface.cpp">
+      <Filter>Source Files\Class\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Netvars.cpp">
+      <Filter>Source Files\Class\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Vmt.cpp">
+      <Filter>Source Files\Class\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Draw.cpp">
+      <Filter>Source Files\Class\Visual</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Menu.cpp">
+      <Filter>Source Files\Class\Visual</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Mouse.cpp">
+      <Filter>Source Files\Class\Visual</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Memory.cpp">
+      <Filter>Source Files\Class\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Module.cpp">
+      <Filter>Source Files\Class\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Security.cpp">
+      <Filter>Source Files\Class\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Utils.cpp">
+      <Filter>Source Files\Class\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="C_MyEntity.cpp">
+      <Filter>Source Files\Class\Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Data.cpp">
+      <Filter>Source Files\Class\Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Cvars.cpp">
+      <Filter>Source Files\Class\Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="C_MyWeapon.cpp">
+      <Filter>Source Files\Class\Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="C_MyWeaponInfo.cpp">
+      <Filter>Source Files\Class\Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="F_CreateMove.cpp">
+      <Filter>Source Files\Functions\Command Mods</Filter>
+    </ClCompile>
+    <ClCompile Include="F_FinishMove.cpp">
+      <Filter>Source Files\Functions\Command Mods</Filter>
+    </ClCompile>
+    <ClCompile Include="F_FrameStage.cpp">
+      <Filter>Source Files\Functions\Command Mods</Filter>
+    </ClCompile>
+    <ClCompile Include="F_GetUserCmd.cpp">
+      <Filter>Source Files\Functions\Command Mods</Filter>
+    </ClCompile>
+    <ClCompile Include="F_InPrediction.cpp">
+      <Filter>Source Files\Functions\Command Mods</Filter>
+    </ClCompile>
+    <ClCompile Include="F_RunCommand.cpp">
+      <Filter>Source Files\Functions\Command Mods</Filter>
+    </ClCompile>
+    <ClCompile Include="F_WriteUsrCmdDeltaBuffer.cpp">
+      <Filter>Source Files\Functions\Command Mods</Filter>
+    </ClCompile>
+    <ClCompile Include="F_PaintTraverse.cpp">
+      <Filter>Source Files\Functions\Visual</Filter>
+    </ClCompile>
+    <ClCompile Include="F_FindMaterial.cpp">
+      <Filter>Source Files\Functions\Visual</Filter>
+    </ClCompile>
+    <ClCompile Include="F_DrawPortal.cpp">
+      <Filter>Source Files\Functions\Visual</Filter>
+    </ClCompile>
+    <ClCompile Include="F_DrawModelExecute.cpp">
+      <Filter>Source Files\Functions\Visual</Filter>
+    </ClCompile>
+    <ClCompile Include="C_GameEvent.cpp">
+      <Filter>Source Files\Class\Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Hitmarker.cpp">
+      <Filter>Source Files\Class\Visual</Filter>
+    </ClCompile>
+    <ClCompile Include="C_AutoWall.cpp">
+      <Filter>Source Files\Class\Command Mods</Filter>
+    </ClCompile>
+    <ClCompile Include="CMD.cpp">
+      <Filter>Header Files\Implementation</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Aimbot.h">
+      <Filter>Header Files\Command Mods</Filter>
+    </ClInclude>
+    <ClInclude Include="C_AntiAim.h">
+      <Filter>Header Files\Command Mods</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Prediction.h">
+      <Filter>Header Files\Command Mods</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Interface.h">
+      <Filter>Header Files\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Netvars.h">
+      <Filter>Header Files\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Vmt.h">
+      <Filter>Header Files\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Memory.h">
+      <Filter>Header Files\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Module.h">
+      <Filter>Header Files\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Security.h">
+      <Filter>Header Files\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Utils.h">
+      <Filter>Header Files\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Cvars.h">
+      <Filter>Header Files\Implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Data.h">
+      <Filter>Header Files\Implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="C_MyEntity.h">
+      <Filter>Header Files\Implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="C_MyMaths.h">
+      <Filter>Header Files\Implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="C_MyWeapon.h">
+      <Filter>Header Files\Implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="C_MyWeaponInfo.h">
+      <Filter>Header Files\Implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Menu.h">
+      <Filter>Header Files\Visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Mouse.h">
+      <Filter>Header Files\Visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Draw.h">
+      <Filter>Header Files\Visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="C_GameEvent.h">
+      <Filter>Header Files\Implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Hitmarker.h">
+      <Filter>Header Files\Visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="C_AutoWall.h">
+      <Filter>Header Files\Command Mods</Filter>
+    </ClInclude>
+    <ClInclude Include="Conversion.h">
+      <Filter>Header Files\Implementation</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\bin.rar" />
+  </ItemGroup>
+</Project>

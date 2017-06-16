@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{280295F7-B204-42D4-BA87-377900065983}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>LayZ_Pz</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>LayZ_Pz_GO</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>benny</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LAYZ_PZ_EXPORTS;__builtin_huge_val()=HUGE_VAL;__builtin_huge_valf()=HUGE_VALF;__builtin_nan=nan;__builtin_nanf=nanf;__builtin_nans=nan;__builtin_nansf=nanf;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);SDK\common;SDK\game\client;SDK\game\shared;SDK\public;SDK\materialsystem;SDK\mathlib;SDK\tier1;SDK\public\tier0;SDK\public\tier1;SDK\public\tier2;SDK\game\client\hl2mp;SDK\game\client\hl2;SDK\game\shared\hl2mp;SDK\game\shared\hl2;SDK\game\shared\Multiplayer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <OmitFramePointers>false</OmitFramePointers>
+      <EnableFiberSafeOptimizations>false</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <FloatingPointModel>Strict</FloatingPointModel>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <AdditionalOptions />
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>No</GenerateDebugInformation>
+      <AdditionalDependencies>legacy_stdio_definitions.lib;winmm.lib;Shlwapi.lib;Iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;_USRDLL;LAYZ_PZ_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LAYZ_PZ_EXPORTS;STUB_MM_EXPORTS;COMPILER_MSVC;COMPILER_MSVC32;SOURCE_ENGINE=12;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\CSGO-SDK;$(SolutionDir)\CSGO-SDK\common;$(SolutionDir)\CSGO-SDK\game\client;$(SolutionDir)\CSGO-SDK\game\shared;$(SolutionDir)\CSGO-SDK\public;$(SolutionDir)\CSGO-SDK\materialsystem;$(SolutionDir)\CSGO-SDK\mathlib;$(SolutionDir)\CSGO-SDK\tier1;$(SolutionDir)\CSGO-SDK\public\tier0;$(SolutionDir)\CSGO-SDK\public\tier1;$(SolutionDir)\CSGO-SDK\public\tier2;$(SolutionDir)\CSGO-SDK\game\client\hl2mp;$(SolutionDir)\CSGO-SDK\game\client\hl2;$(SolutionDir)\CSGO-SDK\game\shared\hl2mp;$(SolutionDir)\CSGO-SDK\game\shared\hl2;</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;legacy_stdio_definitions.lib;winmm.lib;Shlwapi.lib;Iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\CSGO-SDK\lib</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;LIBC;LIBCD;LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;_USRDLL;LAYZ_PZ_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Conversion.h" />
+    <ClInclude Include="C_Aimbot.h" />
+    <ClInclude Include="C_AntiAim.h" />
+    <ClInclude Include="C_AutoWall.h" />
+    <ClInclude Include="C_Cvars.h" />
+    <ClInclude Include="C_Data.h" />
+    <ClInclude Include="C_Draw.h" />
+    <ClInclude Include="C_GameEvent.h" />
+    <ClInclude Include="C_Hitmarker.h" />
+    <ClInclude Include="C_Interface.h" />
+    <ClInclude Include="C_Memory.h" />
+    <ClInclude Include="C_Menu.h" />
+    <ClInclude Include="C_Module.h" />
+    <ClInclude Include="C_Mouse.h" />
+    <ClInclude Include="C_MyEntity.h" />
+    <ClInclude Include="C_MyMaths.h" />
+    <ClInclude Include="C_MyWeapon.h" />
+    <ClInclude Include="C_MyWeaponInfo.h" />
+    <ClInclude Include="C_Netvars.h" />
+    <ClInclude Include="C_Prediction.h" />
+    <ClInclude Include="C_Security.h" />
+    <ClInclude Include="C_Utils.h" />
+    <ClInclude Include="C_Vmt.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CMD.cpp" />
+    <ClCompile Include="C_Aimbot.cpp" />
+    <ClCompile Include="C_AntiAim.cpp" />
+    <ClCompile Include="C_AutoWall.cpp" />
+    <ClCompile Include="C_Cvars.cpp" />
+    <ClCompile Include="C_Data.cpp" />
+    <ClCompile Include="C_Draw.cpp" />
+    <ClCompile Include="C_GameEvent.cpp" />
+    <ClCompile Include="C_Hitmarker.cpp" />
+    <ClCompile Include="C_Interface.cpp" />
+    <ClCompile Include="C_Memory.cpp" />
+    <ClCompile Include="C_Menu.cpp" />
+    <ClCompile Include="C_Module.cpp" />
+    <ClCompile Include="C_Mouse.cpp" />
+    <ClCompile Include="C_MyEntity.cpp" />
+    <ClCompile Include="C_MyWeapon.cpp" />
+    <ClCompile Include="C_MyWeaponInfo.cpp" />
+    <ClCompile Include="C_Netvars.cpp" />
+    <ClCompile Include="C_Prediction.cpp" />
+    <ClCompile Include="C_Security.cpp" />
+    <ClCompile Include="C_Utils.cpp" />
+    <ClCompile Include="C_Vmt.cpp" />
+    <ClCompile Include="F_CreateMove.cpp" />
+    <ClCompile Include="F_DrawModelExecute.cpp" />
+    <ClCompile Include="F_DrawPortal.cpp" />
+    <ClCompile Include="F_FindMaterial.cpp" />
+    <ClCompile Include="F_FinishMove.cpp" />
+    <ClCompile Include="F_FrameStage.cpp" />
+    <ClCompile Include="F_GetUserCmd.cpp" />
+    <ClCompile Include="F_InPrediction.cpp" />
+    <ClCompile Include="F_PaintTraverse.cpp" />
+    <ClCompile Include="F_Proxies.cpp" />
+    <ClCompile Include="F_RunCommand.cpp" />
+    <ClCompile Include="F_SetViewAngles.cpp" />
+    <ClCompile Include="F_WriteUsrCmdDeltaBuffer.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\bin.rar" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
